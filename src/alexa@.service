@@ -1,0 +1,7 @@
+[Unit]
+Description=FAUST CTF alexa service
+
+[Service]
+ExecStart=python manage.py runserver 0.0.0.0:8888
+WorkingDirectory=/srv/alexa
+User=alexa

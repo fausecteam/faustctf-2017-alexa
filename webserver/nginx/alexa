@@ -1,0 +1,14 @@
+server {
+	listen 8000;
+	listen [::]:8000;
+	server_name alexa.*;
+
+	location / {
+		 uwsgi_pass unix:///run/uwsgi/app/alexa/socket;
+		 include uwsgi_params;
+	}
+
+	location /static/ {
+		alias /srv/alexa/alexacloud/alexa/static/;
+	}
+}
