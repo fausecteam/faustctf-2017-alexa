@@ -1,22 +1,9 @@
-### Alexa service
+Alexa
+=====
 
-# Requirements
-* Python3 environment with Django
-* Nginx web server
+This is the source code for the "Alexa" service from [FAUST CTF 2017](https://2017.faustctf.net).
 
-```
-# Create virtual environment
-$ virtualenv -p python3 alexa-venv
-# Activate environment
-$ source alexa-venv/bin/activate
-# Install packages
-$ pip install -r requirements.txt
-# To leave virtual environment later
-$ deactivate
-```
+**As it was written for a CTF service, the code is deliberately insecure and contains exploitable bugs. It
+is provided for educational purposes only, do not even think about (re-) using it for anything productive!**
 
-# How to run the server
-* For testing only: Inside the virtual environment run
-`(alexa-venv)$ python manage.py runserver 80`
-* In production: Have a look at the files in the webserver directory.
-
+The code is released under the ISC License, see LICENSE.txt for details.
